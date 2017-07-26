@@ -19,7 +19,7 @@ from tensorflow.python.saved_model import tag_constants, signature_constants
 from tensorflow.python.saved_model.signature_def_utils_impl import build_signature_def, predict_signature_def
 from tensorflow.contrib.session_bundle import exporter
 
-export_path = '/tmp/vgg'
+export_path = '/tmp/vgg/1'
 builder = saved_model_builder.SavedModelBuilder(export_path)
 
 signature = predict_signature_def(inputs={'images': new_model.input},
